@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Elements</title>
+    <style>
+        html{
+            font-family: sans-serif;
+        }
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        div, p{
+            padding: 0.8em;
+            margin: 1em 0;
+            border: 1px solid #9c9c9c;
+        }
+    </style>
+</head>
+<body>
+    <!-- section 1 -->
+    <h1 id="main">Accessing Elements</h1>
+    <h2>Using the ID(#header)</h2>
+    <div id="header">Access this by using <strong>getElementById()</strong></div>
+
+    <!-- section 2 -->
+    <h2>Using the class(.header)</h2>
+    <div class="header">1. Access this by using <strong>getElementsByClassName()</strong></div>
+    <div class="header">2. Access this by using <strong>getElementsByClassName()</strong></div>
+
+    <!-- section 3 -->
+    <h2>Using Tag(paragraph tag)</h2>
+    <p>1. Access this by using <strong>getElementsByTagName()</strong></p>
+    <p>2. Access this by using <strong>getElementsByTagName()</strong></p>
+
+    <!-- section 4 -->
+    <h2>Using Query Selector (with the ID of 'Query')</h2>
+    <div id="query">1. Access this by using <strong>querySelector()</strong></div>
+
+    <!-- section 5 -->
+    <h2>Using Query Selector all (with the class of "Query All")</h2>
+    <div class="query-all">1. Access by using <strong>querySelectorAll()</strong></div>
+    <div class="query-all">2. Access by using <strong>querySelectorAll()</strong></div>
+</body>
+</html>
