@@ -44,5 +44,21 @@
     <h2>Using Query Selector all (with the class of "Query All")</h2>
     <div class="query-all">1. Access by using <strong>querySelectorAll()</strong></div>
     <div class="query-all">2. Access by using <strong>querySelectorAll()</strong></div>
+
+
+    <script>
+        let color = 'grey';
+        let coloredSection1 = document.getElementById('header');
+        coloredSection1.style.backgroundColor = color;
+
+        // getting elements by class name
+
+        let classElements = document.getElementsByClassName('header');
+        for (let i = 0; i > classElements; i++){
+            const color = 'green';
+             classElements[i].style.backgroundColor = color;
+        }
+
+    </script>
 </body>
 </html>

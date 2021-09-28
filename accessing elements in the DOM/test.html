@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing DOM Understanding</title>
+    <style>
+        html{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+        }
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        p {
+            padding: 0.8em;
+            margin: 1em 0;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Test Yourself</h1>
+    <h2><strong>getElementsByClassName</strong></h2>
+    <p class="colors" onclick="greenBackGroundColor()">Click to change this green</p>
+    <p class="colors" onclick="blueBackGroundColor()">Click to change this blue</p>
+    <p class="colors" onclick="redBackGroundColor()">Click to change this red</p>
+    <p onclick="undoColors()">Undo</p>
+
+    <script>
+         let colors = document.getElementsByClassName('colors');
+
+
+
+         function greenBackGroundColor(){
+             colors[0].style.backgroundColor = 'green';
+         }
+
+         function blueBackGroundColor(){
+             colors[1].style.backgroundColor = 'blue';
+         }
+
+         function redBackGroundColor(){
+             colors[2].style.backgroundColor = 'red';
+         }
+
+       function undoColors(){
+        for (let i = 0; i < colors.length; i++){
+               if(colors[i] !=='black'){
+                   colors[i].style.backgroundColor = 'black';
+               }
+
+           }
+       }
+    </script>
+</body>
+</html>
