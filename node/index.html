@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>What is node?</title>
+    </head>
+    <body>
+        <ul>
+            <li>Good Morning</li>
+            <li>Good Afternoon</li>
+            <li>Good Evening</li>
+        </ul>
+        <script>
+            let listItems_tags = document.getElementsByTagName('li');
+            console.log(listItems_tags, listItems_tags.length);
+            let newChild = listItems_tags[0].parentNode.appendChild(document.createElement('li'));
+            console.log(newChild, listItems_tags.length);
+            newChild.innerHTML = 'Good night'
+
+        </script>
+    </body>
+</html>

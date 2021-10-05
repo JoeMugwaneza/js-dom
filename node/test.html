@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <script>
+            let ulTag = document.getElementsByTagName('ul')[0];
+            let childElementsCount = ulTag.childElementCount;
+            console.log(childElementsCount); //5
+
+            let childNodesLength = ulTag.childNodes.length;
+            let childNodes = ulTag.childNodes 
+            console.log(childNodes); //11
+
+            for (let i = 0; i <= childNodes.length; i++){
+                console.log(childNodes[i]);
+            }
+        </script>
+    </body>
+</html>

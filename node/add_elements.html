@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Adding Elements</title>
+        <style>
+            html{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.2em;
+            }
+            
+            h1 {
+                color:grey;
+            }
+
+            ul > li {
+                list-style-type: none;
+                border: 1px solid black;
+                pad: 10px;
+                margin: 5px;
+                max-width: 40%;
+                background-color: peru;
+            }
+            li {
+                padding-left: 20;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cool Animals</h1>
+        <ul></ul>
+
+        <script>
+            let animals = ["Dogs", "Cat", "Warthog", "Eagle", "Elephant", "Giraffe", "Lion", "Fuck Me"];
+            let ulElement = document.querySelector('ul');
+
+            for (const animal of animals) {
+                let listItems = document.createElement('li');
+                listItems.textContent = animal;
+                ulElement.appendChild(listItems);
+            }
+        </script>
+    </body>
+</html>
