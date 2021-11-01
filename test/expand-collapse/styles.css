@@ -1,0 +1,32 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background: rgb(146, 143, 143);
+}
+
+#content {
+    max-width: 40%;
+    margin: 0 auto;
+    max-height: 140px;
+    overflow: hidden;
+    background-color: honeydew;
+    padding: 10px;
+    transition: max-height 0.9s;
+}
+
+#show-more {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 140px;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 20%;
+}
+
+#content.open {
+    max-height: 1000px;
+    transition: max-height 1s;
+}
