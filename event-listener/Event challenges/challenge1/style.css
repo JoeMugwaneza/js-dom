@@ -1,0 +1,9 @@
+#image, #clicked {
+    font-size: 1.2em;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+}
