@@ -5,6 +5,21 @@
     border: 5px solid rgb(173, 169, 169);
 }
 
-#image {git 
+#image {
     margin: 40px;
+}
+
+#display{
+    max-width: 100%;
+    margin: 30px;
+}
+
+.dot{
+    background: black;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 2px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
 }
