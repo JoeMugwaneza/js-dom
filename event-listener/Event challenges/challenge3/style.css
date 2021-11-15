@@ -1,0 +1,10 @@
+#images > img{
+    width: 400px;
+    height: auto;
+}
+
+#images > .mustache{
+    width: 200px;
+    height: auto;
+    position: absolute;
+}
