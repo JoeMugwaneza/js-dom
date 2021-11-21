@@ -1,0 +1,30 @@
+html{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#quotes {
+    max-width: 40%;
+    margin: auto;
+    background: rgb(180, 224, 199);
+}
+
+#quotes .quote-list{
+    position: relative;
+    border-top: 3px solid rgb(109, 63, 44);
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+#quotes .remove{
+    background: transparent;
+    color: darkred;
+    margin-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
