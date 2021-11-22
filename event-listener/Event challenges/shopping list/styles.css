@@ -1,0 +1,97 @@
+body{
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container{
+    max-width: 50%;
+    margin: 0 auto;
+    border: 3px solid rgb(233, 225, 225);
+    border-style: outset;
+}
+
+#top-cover{
+    text-align: center;
+    padding: 10px;
+    background: rgb(109, 206, 100);
+    color: rgb(87, 85, 85);
+    font-size: 0.8em;
+}
+
+#top-cover input[type="search"]{
+   padding: 5px;
+   margin-bottom: 10px;
+   width: 250px;
+}
+
+#items{
+    padding: 20px;
+}
+
+#add-item{
+  text-align: center;  
+}
+
+#add-item input[type="text"]{
+    width: 200px;
+    padding: 5px;
+    margin: 0px;
+  }
+
+  .search-field{
+      width: 250px;
+  }
+  .search-field, .search-submit{
+      padding: 8px;
+      margin: 0;
+      
+  }
+
+  .search-field +  .search-submit{
+    border:1px solid #a9a9a9;
+    border-left:0px;
+    
+}
+
+  .search-submit{
+      width: 80px;
+      padding: 9px;
+      background: rgb(30, 145, 7);
+      color: rgb(243, 241, 241) ;
+  }
+
+  #items-list{
+      padding-top: 30px;
+      color: rgb(90, 85, 85);
+      font-size: .9em;
+  }
+
+  #items-list .item{
+      padding-left: 10px;
+  }
+
+  #items-list .item > p{
+    border-left: 5px solid rgb(224, 210, 210);
+    padding: 10px;
+    
+  }
+
+  #items-list .item > p:hover{
+    border-left: 5px solid rgb(212, 27, 27);
+    padding: 10px;
+    
+  }
+
+   .item p {
+      display: inline-block;
+
+  }
+
+  .item button {
+      float: right;
+      margin: 20px;
+      background: rgb(218, 14, 14);
+      color: rgb(255, 255, 255);
+      padding: 5px 10px;
+      border-radius: 3px;
+  }

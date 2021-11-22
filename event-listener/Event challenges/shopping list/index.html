@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="top-cover">
+            <h1>Shopaholic</h1>
+            <h3>My shopping list </h3>
+            <input type="search" id="site-search" name="q" placeholder="Search items"> <br>
+            <label for="hide">Hide list</label><input type="checkbox" id="hide" name="hide">
+        </div>
+        <div id="items">
+            <div id="add-item">
+                <input type="search" class="search-field" placeholder="What do you want to buy?" value="" name="s"/><input type="submit" class="search-submit" value="Add" />
+            </div>
+
+            <div id="items-list">
+                <h3>Items To Buy</h3>
+                <div class="item">
+                    <p>Milk</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
