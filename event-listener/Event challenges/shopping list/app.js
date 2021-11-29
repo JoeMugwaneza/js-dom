@@ -16,7 +16,13 @@ function submitForm(){
 
     // adding created item class to the div for styling purpose
     div.className += " items";
-    p.innerHTML = newItem;
+    if(form.value != ""){
+        p.innerHTML = newItem;
+    } else {
+        return;
+    }
+    
+    form.value = "";
     button.innerHTML = "delete";
     button.className += "remove";
 
@@ -60,3 +66,31 @@ checkbox.addEventListener('change', function() {
         }
     }
   });
+
+//   SEARCH
+
+let search = document.getElementById("site-search");
+search.addEventListener('keyup', searchQuery);
+
+function searchQuery(){
+    // STORE ARRAY OF NAMES OF GROCERY LIST 
+
+    let groceries  = document.querySelectorAll(".items p");
+    let groceriesArray = Array.from(groceries, p => p.textContent.toLowerCase());
+
+    // deal with case sensitivity in search query
+
+    let searchText = search.value.toLowerCase()
+
+    // filter and display only groceries list where search querry matches character of groceriesArray
+
+    groceriesArray.forEach(groceryName => {
+        if(groceryName){}
+
+    });
+
+
+
+
+    
+}
