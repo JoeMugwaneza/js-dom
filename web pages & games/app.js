@@ -65,7 +65,7 @@ function maker(eleType){
     ele.style.left = randNum(dim.left,dim.right - game.size) + "px";
     ele.style.top = randNum(dim.top,dim.bottom - game.size) + "px";
 
-    ele.dirX = randNum(1,8);
+    ele.dirX = randNum(1,2);
     ele.addEventListener('click', (e) =>{
         // //console.log(ele.offsetLeft);
         // //console.log(ele.offsetTop);
@@ -107,7 +107,7 @@ function updatePosition(){
             enemy.dirX *= - 1
         };
 
-        x +=enemy.dirX;
+        x += enemy.dirX;
         if(isCollide(enemy,box)){
             console.log("hit");
             enemy.remove();
@@ -153,7 +153,7 @@ function updatePosition(){
 
 
 // h1.addEventListener('click', (e) =>{
-//     let randColor1 = 'rgba('+randColorGen()+','+randColorGen()+','+randColorGen()+',0.5)';
+    // let randColor1 = 'rgba('+randColorGen()+','+randColorGen()+','+randColorGen()+',0.5)';
 //     h1.style.backgroundColor = randColor1;
 
 //     let randColor2 = 'rgb('+randColorGen()+','+randColorGen()+','+randColorGen()+')';
